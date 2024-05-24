@@ -1,0 +1,12 @@
+QT += core gui network mqtt
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+TARGET = simplemqttclient
+TEMPLATE = app
+DEFINES += QT_DEPRECATED_WARNINGS
+DEFINES += QT_DISABLE_DEPRECATED_UP_TO=0x060000
+SOURCES += main.cpp\
+mainwindow.cpp
+HEADERS += mainwindow.h
+FORMS += mainwindow.ui
+target.path = $$[QT_INSTALL_EXAMPLES]/mqtt/simpleclient
+INSTALLS += target
